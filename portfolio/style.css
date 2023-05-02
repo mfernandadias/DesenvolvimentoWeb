@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2? family= Overpass:ital,wght@1,200 & display=swap');
+
+body {
+    margin: 0; 
+    padding: 0; 
+    font-family: "Poppins", sans-serif;
+    color: #1e1e2a;
+}
+
+/* HEADER */
+
+.header-container {
+    height: 100vh;
+    width: 100vw; 
+    background-color: #dac3db;
+    background-image: URL();
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: contain; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: flex-start;
+    box-sizing: border-box; 
+    padding: 0 112px; 
+    position: relative;
+}
+   
+h1 {
+    font-size: 50px; 
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+
+h2 {
+    text-transform: uppercase; 
+    letter-spacing: 4px;
+}
+
+.social-media {
+    margin-top: 1rem; 
+    display: flex;
+}
+
+.social-media a {
+    text-decoration: none; 
+    color: #131313;
+    padding: 1rem 4rem; 
+    border: 1px solid #a0568a;
+    min-width: 4rem; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: .5s ease-in-out; 
+}
+
+a:hover {
+    background-color: #e186e4;
+}
+
+/* Menu Hambuguer */ 
+
+.checkbox-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.checkbox {
+    height: 100px; 
+    width: 100px; 
+    position: absolution; 
+    right: 0;
+    top: 0;
+    display: flex; 
+    justify-content: center; 
+    cursor: pointer; 
+    z-index: 9999; 
+    transition: 400ms ease-in-out 0s; 
+}
+
+.checkbox .trace {
+    width: 50px; 
+    height: 2px; 
+    background-color: #2e2e2f;
+    position: absolute; 
+    border-radius: 4px; 
+    transition: 0.5s ease-in-out; 
+}
+
+.checkbox .trace:nth-child(1) {
+    top: 26px; 
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(2) {
+    top: 46px; 
+    transform: rotate(0);
+}
+
+.checkbox .trace:nth-child(3) {
+    top: 66px; 
+    transform: rotate(0);
+}
+
+#taggle {
+    display: none; 
+}
+
+/* Menu */ 
+
+.menu {
+    position: absolute; 
+    top: 28px; 
+    right: 30px; 
+    background-color: transparent; 
+    height: 4px; 
+    width: 10px; 
+    border-radius: 50%; 
+    box-shadow: 0px 0px 0px 0px #a0568a;
+}
+
