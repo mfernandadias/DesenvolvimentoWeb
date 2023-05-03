@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2? family= Overpass:ital,wght@1,200 & display=swap');
+
+body {
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    background: #561a52;
+}
+
+input{
+    color: #93568f;
+    padding: 17px; 
+    outline: none; 
+    font-size: 30px; 
+    font-family: 'Bebas Neue', cursive; 
+    border-radius: 25%; 
+}
+
+.num {
+    width: 64px; 
+    height: 67px; 
+}
+
+.main{
+    display: inline-block;
+}
+
+.maincolor {
+    bacground-color: #000;
+}
