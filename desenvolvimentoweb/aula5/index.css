@@ -30,19 +30,25 @@ h2 {
 }
 
 .margin{
-
+    margin: 0; 
+    padding: 0; 
 }
 .form{
     
-    font-size: 15px;
+    font-size: 25px;
+    text-transform: none; 
+    letter-spacing: 50%;
     text-align: center; 
 }
 
 .resultado{
-    background-color: #d2aadb; 
-    color: #0d010d;
+    background-color: #660d7b; 
+    flex-direction: column;
+    color: #f4f1f4;
     word-spacing: 2px;
-    font-size: 15px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
     text-align: center; 
    
 } 
