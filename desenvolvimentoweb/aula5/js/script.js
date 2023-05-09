@@ -40,39 +40,3 @@ form.addEventListener('submit', (event) => {
 
 
 
-
-/*function meuescopo () {
-   const form = document.querySelector('.form');
-   const resultado = document.querySelector('.resultado');
-
-   const pessoas = [];
-   
-   function recebeEventForm (evento) {
-    evento.preventDefault();
-
-    const login = form.querySelector('.login');
-    const nome = form.querySelector('.nome');
-    const sobrenome = form.querySelector('.sobrenome');
-    const N1 = form.querySelector('.N1');
-    const N2 = form.querySelector('.N2');
-    const Nota_Final = form.querySelector('.Nota_Final');
-
-   pessoas.push ({
-    login: login.value, 
-    nome: nome.nodeValue, 
-    sobrenome: sobrenome.value,
-    N1: N1.value,
-    N2: N2.value, 
-    Nota_Final: Nota_Final.value
-   });
-   
-   console.log(pessoas);
-
-   resultado.innerHTML += `<p>${login.value} ${nome.value} 
-   ${sobrenome.value} ${N1.value} ${N2.value} ${Nota_Final.value}</p>`
-   
-   }
-
-   form.addEventListener('submit', recebeEventForm);
-}
-meuescopo(); */
