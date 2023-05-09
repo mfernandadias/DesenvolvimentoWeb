@@ -29,19 +29,20 @@ h2 {
     text-align: center;
 }
 
-/**{
-    margin: 0; 
-    padding: 0; 
-}*/
+.margin{
+
+}
 .form{
-    background-color:
-    height: 5px;
-    margin: 5px;
+    
     font-size: 15px;
     text-align: center; 
 }
 
 .resultado{
-    background-color: #d0c4c4; 
+    background-color: #d2aadb; 
+    color: #0d010d;
+    word-spacing: 2px;
+    font-size: 15px;
+    text-align: center; 
    
 } 

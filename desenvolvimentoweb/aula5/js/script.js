@@ -3,7 +3,7 @@ const form = document.querySelector('.form');
 const resultado = document.querySelector('.resultado');
 
 function mostrarResultado() {
-    const login = form.querySelector('.login').value;
+    const login = form.querySelector('.Login').value;
     const nome = form.querySelector('.nome').value; 
     const sobrenome = form.querySelector('.sobrenome').value;
     const n1 = form.querySelector('.n1').value;
