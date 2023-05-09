@@ -1,3 +1,0 @@
-function meuEscopo () {
-    const 
-}
