@@ -7,6 +7,7 @@
     <title>Formulário de Alunos</title>
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./index.css">
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,17 +23,35 @@
     </header>
 
     <form class="form" action="" method="get">
-        <p> login(id): <input type="text" class="login"></p>
+        <p> Login(id): <input type="text" class="login"></p>
         <p> Nome: <input type="text" class="nome"></p>
         <p> Sobrenome: <input type="text" class="sobrenome"></p>
-        <p> N1: <input type="text" class="N1"></p>
-        <p> N2: <input type="text" class="N2"></p>
+        <p> N1: <input type="text" class="n1"></p>
+        <p> N2: <input type="text" class="n2"></p>
         <p> Nota Final: <input type="text" class="Nota_Final"></p>
         <button>Enviar</button>
     </form>
 
-    <div class="resultado"></div>
+    
+    <div class="resultado" action="" method="get">
+        <h2>Resultados</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>login(id)</th>
+              <th>Nome</th>
+              <th>Sobrenome</th>
+              <th>N1</th>
+              <th>N2</th>
+              <th>Nota Final</th>
+            </tr>
+          </thead>
+          <tbody>
+          <script src="js/script.js"></script>
+          </tbody>
+        </table>
+      </div>
 
-    <script src="js/script.js"></script>
+    <!--<script src="js/script.js"></script> --> 
 </body>
 </html>
