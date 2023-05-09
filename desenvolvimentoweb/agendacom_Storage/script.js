@@ -8,7 +8,8 @@ if(lista) {
     lista = [];
 }
 
-listar();
+ 
+
 
 formulario.addEventListener("submil", function (e){
     e.preventDefault();
@@ -28,7 +29,7 @@ formulario.addEventListener("submil", function (e){
 })
 
 function listar() {
-    ulPessoas.innerHTML = "";
+    ulPessoas.innerHTML="";
     lista.forEach((item, key) => {
         console.log(item,key);
     });
