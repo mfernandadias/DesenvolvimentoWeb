@@ -44,7 +44,8 @@
             e.preventDefault();
             let novaPessoa = new Object();
             novaPessoa.nome = this.nome.value; 
-            novaPessoa.telefone = this.telefone.value; 
+            novaPessoa.telefone = this.telefone.value;
+            novaPessoa.email = this.email.value; 
             
             lista.push(novaPessoa);
 
@@ -65,7 +66,7 @@
                   
                   let s = `<button>[Excluir]</button><button>[Editar]</button>`
 
-                  linha.innerHTML = "Nome: " + item.nome + "Telefone: " + item.telefone + s;
+                  linha.innerHTML = "Nome: " + item.nome + "Telefone: " + item.telefone + "Email: " + item.email + s;
                   ulPessoas.appendChild(linha);
                }
             });

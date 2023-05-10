@@ -41,3 +41,10 @@ input[type="submit"]{
     height: 60%; 
     background-color: rgb(118, 158, 215);
 }
+
+ul{
+    list-style: none; 
+    overflow: scroll; 
+    height: 100%; 
+}
+li { border-bottom: 1px solid rgb(30, 27, 190)}
