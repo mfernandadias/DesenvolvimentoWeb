@@ -58,6 +58,7 @@
         function listar(filtro='') {
             ulPessoas.innerHTML = "";
             lista.forEach((item,key) => {
+                console.log(item,key);
                
                if(item.nome.toUpperCase().indexOf(filtro.toUpperCase()) >= 0 || filtro=="") {
                   linha = document.createElement('li');

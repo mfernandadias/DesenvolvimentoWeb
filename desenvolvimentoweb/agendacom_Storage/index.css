@@ -35,3 +35,9 @@ input[type="submit"]{
     background-color: rgb(122, 232, 179);
     width: 15%;
 }
+.list{
+    padding: 10px; 
+    margin-top: 10px; 
+    height: 60%; 
+    background-color: rgb(118, 158, 215);
+}
