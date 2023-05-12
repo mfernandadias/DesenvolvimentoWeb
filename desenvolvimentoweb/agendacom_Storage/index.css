@@ -11,4 +11,21 @@ form {
     border: 1px solid gray; 
     padding: 20px; 
     box-shadow: 1px 1px gray; 
+    text-align: center;
+}
+input {
+    margin-bottom: 5px; 
+    font-size: 16px; 
+    border-radius: 8px;
+}
+
+input[type=text]{
+    padding: 5px; 
+    outline: none; 
+    width: 90%;
+}
+input[type="submit"]{
+    padding: 5px 10px; 
+    margin-bottom: 5px;
+    background-color: lightgreen;
 }
