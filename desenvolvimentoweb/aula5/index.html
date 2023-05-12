@@ -12,8 +12,7 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https: //fonts.googleapis.com/css2?family= Montserrat:wght@200 
-    & family= Viaduto:ital,wght@1,200 & display =swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Viaduto:ital,wght@1,200&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
@@ -21,35 +20,43 @@
         <h1>Cadastro de Estudantes</h1>
     </header>
 
+
+    <main>
     <form class="form" action="" method="get">
       
         <p> Nome: <input type="text" class="nome"></p>
         <p> Sobrenome: <input type="text" class="sobrenome"></p>
-        <p> Instuição de ensino: <input type="text" class="Instuicao_de_ensino"></p>
-        <p> Cargo:  <input type="text" class="n2"></p>
+        <p> Instituição de Ensino: <input type="text" class="Instuicao_de_ensino"></p>
+        <p> Cargo:  <input type="text" class="cargo"></p>
       
         <button>Enviar</button>
     </form>
+    <div class="resultado">
+      <input id="pesquisa" type="text" placeholder="Pesquisar" onkeyup="listar(this.value)"/>
+      <ul>
 
+      </ul> 
+    </div>
+  </main>
     
-    <div class="resultado" action="" method="get">
+    <div class="resultado">
         <h2>Resultados</h2>
         <table>
           <thead>
             <tr>
               <th>Nome</th>
               <th>Sobrenome</th>
-              <th>Instituição de Ensino </th>
-              <th> Cargo </th>
-
+              <th>Instituição de Ensino</th>
+              <th>Cargo</th>
             </tr>
           </thead>
           <tbody>
-          <script src="js/script.js"></script>
+
           </tbody>
         </table>
-      </div>
+    </div>
 
+    <script src="js/script.js"></script>
     
 </body>
 </html>
