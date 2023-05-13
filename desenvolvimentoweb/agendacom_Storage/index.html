@@ -17,7 +17,7 @@
             <input type="submit" value="Salvar" />
         </form>
       <div class="list">
-        <input type="text" placeholder="Pesquisar" />
+        <input id="pesquisa" type="text" placeholder="50" onkeyup="listat(this.value)"/>
         <ul>
 
         </ul> 
@@ -29,7 +29,7 @@
 
         const formulario = document.querySelector("form");
         const ulPessoas = document.querySelector("ul");
-       /* if (lista) {
+       if (lista) {
             try {
                 lista = JSON.parse(lista);
             } catch (e) {
@@ -38,14 +38,15 @@
             }
         } else  {
             lista = [];
-        } */
+        } 
     
-        if(lista) {
+       /* if(lista) {
            lista = JSON.parse(lista);
         } else {
             lista = [];
-        } 
-
+        } */
+        
+        listar();
         console.log(lista);
 
         formulario.addEventListener("submit", function (e) {
@@ -63,15 +64,15 @@
 
             localStorage.setItem("minhaLista", JSON.stringify(lista));
            // console.log(jsonlinha);
-            listar();
+            //listar();
         
         })
 
-        function listar() {
+        function listar(filtro='') {
             ulPessoas.innerHTML = "";
             lista.forEach((item,key) => {
                 //console.log(item, key);
-
+                if(item.nome.toUpperCase().indexOf(filtro.toUpperCase()) >= 0 || filtro =="")
                 linha = document.createElement('li');
 
                 let s = `<button>[Excluir]</button><button>[Editar]</button>`
