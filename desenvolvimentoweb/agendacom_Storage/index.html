@@ -10,7 +10,7 @@
 <body>
     <main> 
         <form> 
-            <input type="hidden" name="id"> 
+            <input type="hidden" name="id"/> 
             <input  name="nome" type="text" maxlength="50" placeholder="Nome" required />
             <input name="telefone" type="text" maxlength="50" placeholder="Telefone" required />
             <input name="email" type="text" maxlength="50" placeholder="email" />
@@ -25,23 +25,32 @@
     </main>
 
     <script>
-        
+        let lista = localStorage.getItem("minhaLista");
 
         const formulario = document.querySelector("form");
         const ulPessoas = document.querySelector("ul");
-
-        let lista = localStorage.getItem("minhaLista");
-
+       /* if (lista) {
+            try {
+                lista = JSON.parse(lista);
+            } catch (e) {
+                console.log("Erro ao fazer persing do JSON:" + e);
+                lista = [];
+            }
+        } else  {
+            lista = [];
+        } */
+    
         if(lista) {
-            lista = JSON.parse(lista);
+           lista = JSON.parse(lista);
         } else {
             lista = [];
-        }
+        } 
 
+        console.log(lista);
 
         formulario.addEventListener("submit", function (e) {
             e.preventDefault();
-            console.log(this);
+            //console.log(this);
             let novaPessoa = new Object();
             novaPessoa.nome = this.nome.value; 
             novaPessoa.telefone = this.telefone.value; 
@@ -53,7 +62,7 @@
             this.reset();
 
             localStorage.setItem("minhaLista", JSON.stringify(lista));
-            
+           // console.log(jsonlinha);
             listar();
         
         })
@@ -61,7 +70,14 @@
         function listar() {
             ulPessoas.innerHTML = "";
             lista.forEach((item,key) => {
-                console.log(item, key);
+                //console.log(item, key);
+
+                linha = document.createElement('li');
+
+                let s = `<button>[Excluir]</button><button>[Editar]</button>`
+
+                linha.innerHTML = "Nome: " + item.nome + "Telefone: " + item.telefone + "email: " + item.email + s;
+                ulPessoas.appendChild(linha);
             })
         }
     </script>
