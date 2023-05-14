@@ -57,14 +57,18 @@
             novaPessoa.telefone = this.telefone.value; 
             novaPessoa.email = this.email.value; 
             console.log(novaPessoa);
-
-            lista.push(novaPessoa);
-
+            if (this.id.value !== "" && this.id.value >=0){
+                lista[this.id.value] = novaPessoa;
+            } else {
+                lista.push(novaPessoa);
+            }
+    
             this.reset();
-
-            localStorage.setItem("minhaLista", JSON.stringify(lista));
-           // console.log(jsonlinha);
-            //listar();
+            salvarLS();
+      
+        //localStorage.setItem("minhaLista", JSON.stringify(lista));
+        // console.log(jsonlinha);
+            listar();
         
         })
 
@@ -72,14 +76,32 @@
             ulPessoas.innerHTML = "";
             lista.forEach((item,key) => {
                 //console.log(item, key);
-                if(item.nome.toUpperCase().indexOf(filtro.toUpperCase()) >= 0 || filtro =="")
-                linha = document.createElement('li');
+                if(item.nome.toUpperCase().indexOf(filtro.toUpperCase()) >= 0 || filtro =="") {
+                let linha = document.createElement('li');
 
-                let s = `<button>[Excluir]</button><button>[Editar]</button>`
+                let s = `<button onClick="excluir(${key})">[Excluir]</button>
+                          <button onClick="editar(${key})">[Editar]</button>`
 
-                linha.innerHTML = "Nome: " + item.nome + "Telefone: " + item.telefone + "email: " + item.email + s;
+                linha.innerHTML = "Nome:" + item.nome + " Telefone:" + item.telefone + " email:" + item.email + s;
                 ulPessoas.appendChild(linha);
+                }
             })
+        }
+        function excluir (id) {
+            formulario.reset();
+           lista.splice(id,1);
+           salvarLS();
+           listar();
+        }
+        function editar(id){
+            formulario.id.value = id;
+            formulario.nome.value = lista[id].nome;
+            formulario.telefone.value = lista[id].telefone;
+            formulario.email.value = lista[id].email;
+        }
+
+        function salvarLS(lista) {
+            localStorage.setItem("minhaLista", JSON.stringify(lista));
         }
     </script>
     
