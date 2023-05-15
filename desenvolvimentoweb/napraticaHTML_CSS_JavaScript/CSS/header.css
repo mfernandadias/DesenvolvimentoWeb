@@ -1,5 +1,5 @@
 header {
-    background-color: #c5d2ef; 
+    background-color: #f3eee6; 
     padding: 25px;
 
     display: flex; 
@@ -24,9 +24,9 @@ header nav a{
 }
 
 header h1, a {
-    color: #6f064e; 
+    color: #111111; 
 }
 
 header h1:hover, a:hover {
-    color: #fff;
+    color: #0d0c0c;
 }
