@@ -26,3 +26,9 @@ main .main-content .text p {
   font-size: 1.2em; 
   font-weight: 300;
 }
+
+/* CARDS ========= */ 
+main.techs .cards-conteiner {
+ display: flex; 
+ align-items:center;
+}
