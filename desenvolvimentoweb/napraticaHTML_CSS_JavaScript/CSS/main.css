@@ -25,6 +25,7 @@ main .main-content .text p {
   width: 75%;
   font-size: 1.2em; 
   font-weight: 300;
+  line-height: 1.6;
 }
 
 /* CARDS ========= */ 
@@ -38,7 +39,8 @@ main .techs .cards-container .card {
     padding: 10px; 
     background-color: #f4f0f0; 
     border-radius: 8px; 
-    margin-right: 1.8px;
+    margin-right: 0.9em;
+    margin-left: 0.9em;
     cursor: pointer; 
 
     display: flex; 
