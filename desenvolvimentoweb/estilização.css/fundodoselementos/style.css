@@ -9,7 +9,7 @@ div {
 }
 
 /* exemplo */ 
-
+       
 #cover {
     background-size: cover; 
 }
@@ -22,5 +22,5 @@ div {
     background-size: 200%; 
 }
 #exemplo-x-y{
-
+    background-size: 200%; 
 }
